@@ -8400,19 +8400,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Beecker\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\neyma\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "CapacitacionCR",
       "projectName": "CapacitacionCR",
-      "projectPath": "C:\\Users\\Beecker\\Documents\\UiPath\\CapacitacionCR\\.local",
-      "packagesPath": "C:\\Users\\Beecker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Beecker\\Documents\\UiPath\\CapacitacionCR\\.local",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ]
+      "projectPath": "P:\\Documentos\\RepositorioBeecker\\CapacitacionCR\\.local",
+      "packagesPath": "C:\\Users\\neyma\\.nuget\\packages\\",
+      "outputPath": "P:\\Documentos\\RepositorioBeecker\\CapacitacionCR\\.local"
     },
     "frameworks": {
       "net461": {
@@ -8438,7 +8434,7 @@
             "version": "[22.4.4, 22.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Beecker\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\neyma\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
