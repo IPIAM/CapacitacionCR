@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="741,6115" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="741,6031" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -72,7 +72,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="509,6050" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="509,5966" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Nombre" />
       <Variable x:TypeArguments="x:String" Name="Precio" />
@@ -83,19 +83,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="467,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Star&quot;]" />
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,639" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.amazon.com.mx/">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="467,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start&quot;]" />
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,701" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.amazon.com.mx/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,538" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,600" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
             <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'msedge.exe Extension'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
@@ -121,7 +122,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Chrome_RenderWidgetHost...'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="Television">
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="busqueda" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="Television">
               <ui:SetValue.Target>
                 <ui:Target Element="{x:Null}" Id="392837eb-cac9-436b-81da-00b5bbe47e2d" InformativeScreenshot="108e51966b87c83c8221434f6968cba8" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Amazon.com.mx: Precios bajos - Envío rápido - Millones de produc*' /&gt;&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;">
                   <ui:Target.ClippingRegion>
@@ -174,7 +175,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0da40b68-d9eb-4335-b504-8f3c9ff733fb" InformativeScreenshot="2a69b8d414301cf10212b3796b521fd9" Selector="&lt;html app='chrome.exe' title='Amazon.com.mx : Television' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;a&amp;gt;div' parentid='search' tag='DIV' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0da40b68-d9eb-4335-b504-8f3c9ff733fb" InformativeScreenshot="34bea86a6db7bd9ee8131b673f385388" Selector="&lt;html app='chrome.exe' title='Amazon.com.mx : Television' /&gt;&lt;webctrl parentid='search' tag='IMG' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -184,9 +185,9 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  productTitle'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="nombre 1" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6dff8146-e8b2-42d4-b53b-dabd06b61d7f" InformativeScreenshot="7a1f350684202af69269c60077a1ef0e" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Television Samsung SmarTV Led 4k Crystal UHD con HDR10, Motion Rate 120, Modelo 2020 Class TU700D (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6dff8146-e8b2-42d4-b53b-dabd06b61d7f" InformativeScreenshot="0fa8ef5f5e3cc8e6450bfb14b707b34e" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtube Disney+ Prime Video 32S21(Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -199,9 +200,9 @@
         <OutArgument x:TypeArguments="x:String">[Nombre]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="precio 1" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5861067a-db27-4b48-9816-0ea6fc15e57e" InformativeScreenshot="489a924b4dc78b8f510669c4870b7347" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Television Samsung SmarTV Led 4k Crystal UHD con HDR10, Motion Rate 120, Modelo 2020 Class TU700D (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='$7,299.00' idx='2' tableRow='1' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5861067a-db27-4b48-9816-0ea6fc15e57e" InformativeScreenshot="39618005c7cf942d82ac34e31dfb7c35" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtube Disney+ Prime Video 32S21(Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl parentid='corePriceDisplay_desktop_feature_div' tag='DIV' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -214,9 +215,9 @@
         <OutArgument x:TypeArguments="x:String">[Precio]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="url 1" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4e6cba68-0692-4963-9bc2-736710383ea3" InformativeScreenshot="05c049c6f282b8f30fa35f07903d3a9c" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Television Samsung SmarTV Led 4k Crystal UHD con HDR10, Motion R*' /&gt;&lt;ctrl name='Television Samsung SmarTV Led 4k Crystal UHD con HDR10, Motion R*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4e6cba68-0692-4963-9bc2-736710383ea3" InformativeScreenshot="c547bf1375c11d314ce605135f0e7ca6" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' /&gt;&lt;ctrl name='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -245,7 +246,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e28f0768-a69c-4e78-8632-adcc7391ecff" InformativeScreenshot="0eae52b292468f65758392cc3253c0c0" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Television Samsung SmarTV Led 4k Crystal UHD con HDR10, Motion R*' /&gt;&lt;ctrl name='Television Samsung SmarTV Led 4k Crystal UHD con HDR10, Motion R*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Volver' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e28f0768-a69c-4e78-8632-adcc7391ecff" InformativeScreenshot="66a83d8a04e5d71f65156c6a1e9f9ef3" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' /&gt;&lt;ctrl name='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Volver' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -267,7 +268,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d45353e-eede-4a77-8cc1-60b37c08551b" InformativeScreenshot="b0a6c4b2fbcad1d093c634074a58b842" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Amazon.com.mx : Television' /&gt;&lt;webctrl aaname='Anuncio patrocinado: TCL Television 32&amp;quot; HD LED 720p Android TV H*' parentid='search' tag='IMG' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d45353e-eede-4a77-8cc1-60b37c08551b" InformativeScreenshot="cc8db13129e9fb3630474bd349b8e0a0" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Amazon.com.mx : Television' /&gt;&lt;webctrl aaname='Anuncio patrocinado: Telvision Onn 100002430 HD 24 pulgadas Pant*' parentid='search' tag='IMG' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -277,9 +278,9 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  productTitle'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_4">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="nombre 2" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_4">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="413dee1c-ad4c-4f53-9352-6f696cc242c2" InformativeScreenshot="898083172af558291b44cec673914614" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtube Disney+ Prime Video 32S21(Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="413dee1c-ad4c-4f53-9352-6f696cc242c2" InformativeScreenshot="11811b0afad78463308d7660b9f31e23" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definicion 720P HDMI TV USB (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -292,9 +293,9 @@
         <OutArgument x:TypeArguments="x:String">[Nombre]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="precio 2" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce6bcef1-e9e2-4741-99b3-9c61277105f1" InformativeScreenshot="2c5b1573f029a03e97743b06542992e1" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtube Disney+ Prime Video 32S21(Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span' idx='2' parentid='corePriceDisplay_desktop_feature_div' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce6bcef1-e9e2-4741-99b3-9c61277105f1" InformativeScreenshot="79e18d0ca46bf3ef1751598689a08bd7" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definicion 720P HDMI TV USB (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='$2,999.00' idx='2' tableRow='1' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -307,9 +308,9 @@
         <OutArgument x:TypeArguments="x:String">[Precio]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="url 2" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4d6d08fc-b634-4b10-953d-2cec54e5f2ed" InformativeScreenshot="104a1e15264770b32d23bb06d1dec36b" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' /&gt;&lt;ctrl name='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4d6d08fc-b634-4b10-953d-2cec54e5f2ed" InformativeScreenshot="fa48ba416df532d6e904cace93d4cb4f" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' /&gt;&lt;ctrl name='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -337,7 +338,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16b7c385-dc2e-42e0-872a-98dd4761c7d0" InformativeScreenshot="f53fb5c974b0eea47511771d97a34a1e" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' /&gt;&lt;ctrl name='TCL Television 32&amp;quot; HD LED 720p Android TV HDMI USB Netflix Youtu*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Volver' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16b7c385-dc2e-42e0-872a-98dd4761c7d0" InformativeScreenshot="308ba1f6f406b14b7da1655fe6e0c114" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' /&gt;&lt;ctrl name='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Volver' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -359,7 +360,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="43b3924e-7414-47bf-bdf3-d4ec75d914f6" InformativeScreenshot="ce8b50654bb8809fd9c17458ad99a7da" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Amazon.com.mx : Television' /&gt;&lt;webctrl aaname='Anuncio patrocinado: Telvision Onn 100002430 HD 24 pulgadas Pant*' parentid='search' tag='IMG' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="43b3924e-7414-47bf-bdf3-d4ec75d914f6" InformativeScreenshot="f97c42c26cd341c21f26cf631bd2f754" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Amazon.com.mx : Television' /&gt;&lt;webctrl aaname='Anuncio patrocinado: TCL Television de 55&amp;quot; 4-Series Class 4K (21*' parentid='search' tag='IMG' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -369,9 +370,9 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'H1  title'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="nombre 3" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c6fd3e6-fa75-4bc5-8b1d-f4d23c3ee1b0" InformativeScreenshot="c7f9e783e98ea4295942d0806fe73c7a" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definicion 720P HDMI TV USB (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='H1' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c6fd3e6-fa75-4bc5-8b1d-f4d23c3ee1b0" InformativeScreenshot="a7d8ac9af788ad23f2a4d3f43482f899" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Smart LED TV Compatible con Netflix, Youtube, Disney+ y Apple TV - 55S431 (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -384,9 +385,9 @@
         <OutArgument x:TypeArguments="x:String">[Nombre]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_8">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="precio 3" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_8">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5f5ca5a-b550-4b39-8ad8-66aabc7c0b03" InformativeScreenshot="b5e55f7a12b02520f03f72e20d677c26" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definicion 720P HDMI TV USB (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='$2,999.00' idx='2' tableRow='1' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c5f5ca5a-b550-4b39-8ad8-66aabc7c0b03" InformativeScreenshot="a2da92da5fc82ee4492c0b6f7138ab22" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Smart LED TV Compatible con Netflix, Youtube, Disney+ y Apple TV - 55S431 (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='1' tag='TD' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -399,9 +400,9 @@
         <OutArgument x:TypeArguments="x:String">[Precio]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_9">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="url 3" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_9">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92a3f23a-fc41-46e7-8f80-897ee17bec93" InformativeScreenshot="c119b06f3f4d8cd5d9e96379ae7d6342" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' /&gt;&lt;ctrl name='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92a3f23a-fc41-46e7-8f80-897ee17bec93" InformativeScreenshot="201cb1ba63fb2b8918af52b1beb9ad42" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' /&gt;&lt;ctrl name='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -429,7 +430,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c302f553-e3cb-4177-8141-92154a9c5511" InformativeScreenshot="0839662db53386655cbf3199df0c156d" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' /&gt;&lt;ctrl name='Telvision Onn 100002430 HD 24 pulgadas Pantalla LED Alta definic*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Volver' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c302f553-e3cb-4177-8141-92154a9c5511" InformativeScreenshot="b77283570a80f427343243cf912a4312" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' /&gt;&lt;ctrl name='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Volver' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -451,7 +452,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6c4df01-3b44-49b1-ba15-dd718acede48" InformativeScreenshot="48c383a4c1ab6293c0f23bc51c091c03" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Amazon.com.mx : Television' /&gt;&lt;webctrl aaname='Anuncio patrocinado: TCL Television de 55&amp;quot; 4-Series Class 4K (21*' parentid='search' tag='IMG' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6c4df01-3b44-49b1-ba15-dd718acede48" InformativeScreenshot="8e31ad6c88b58e46f81675f04a2b529e" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Amazon.com.mx : Television' /&gt;&lt;webctrl aaname='Anuncio patrocinado: LG Television de 50&amp;quot; Class 4K (2160p) LED S*' parentid='search' tag='IMG' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -461,9 +462,9 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  productTitle'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_10">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="nombre 4" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_10">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0313fff0-f8af-48a9-83a5-cef4f91ca9cb" InformativeScreenshot="524a96dbad13ed9c38e0a30d2d8ab013" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Smart LED TV Compatible con Netflix, Youtube, Disney+ y Apple TV - 55S431 (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0313fff0-f8af-48a9-83a5-cef4f91ca9cb" InformativeScreenshot="4ff6632d418a5ab42fe6d8473a80b136" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='LG Television de 50&amp;quot; Class 4K (2160p) LED Smart TV Compatible con Netflix, Youtube, Disney+ y Apple TV - 50UN6955ZUF (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl id='productTitle' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -476,9 +477,9 @@
         <OutArgument x:TypeArguments="x:String">[Nombre]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_11">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="precio 4" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_11">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d058195e-9511-4a0c-80b2-293f2a9fab42" InformativeScreenshot="e91084c6412090b763cace7b9a1dd020" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Smart LED TV Compatible con Netflix, Youtube, Disney+ y Apple TV - 55S431 (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='$7,499.00' idx='2' tableRow='1' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d058195e-9511-4a0c-80b2-293f2a9fab42" InformativeScreenshot="963f12da39fcd8bf7c5c61e8fd98fda8" Selector="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='LG Television de 50&amp;quot; Class 4K (2160p) LED Smart TV Compatible con Netflix, Youtube, Disney+ y Apple TV - 50UN6955ZUF (Reacondicionado) : Amazon.com.mx: Electrónicos' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='$8,999.00' idx='2' tableRow='2' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -491,9 +492,9 @@
         <OutArgument x:TypeArguments="x:String">[Precio]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_12">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="url 4" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_12">
       <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d367a8ec-b374-4f41-a3fa-b35bbf469f67" InformativeScreenshot="ad9d20b7144ee1c145016e987f929c43" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' /&gt;&lt;ctrl name='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d367a8ec-b374-4f41-a3fa-b35bbf469f67" InformativeScreenshot="91abadf2ac8a65c68ec2211a5a95d60b" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='LG Television de 50&amp;quot; Class 4K (2160p) LED Smart TV Compatible co*' /&gt;&lt;ctrl name='LG Television de 50&amp;quot; Class 4K (2160p) LED Smart TV Compatible co*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -509,24 +510,9 @@
     <ui:WriteCell Cell="A4" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="467,115" sap2010:WorkflowViewState.IdRef="WriteCell_10" SheetName="Hoja1" Text="[Nombre]" WorkbookPath="informacion.xlsx" />
     <ui:WriteCell Cell="B4" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="467,115" sap2010:WorkflowViewState.IdRef="WriteCell_11" SheetName="Hoja1" Text="[Precio]" WorkbookPath="informacion.xlsx" />
     <ui:WriteCell Cell="C4" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="467,115" sap2010:WorkflowViewState.IdRef="WriteCell_12" SheetName="Hoja1" Text="[Url]" WorkbookPath="informacion.xlsx" />
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="GetValue_13">
-      <ui:GetValue.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d367a8ec-b374-4f41-a3fa-b35bbf469f67" InformativeScreenshot="ad9d20b7144ee1c145016e987f929c43" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' /&gt;&lt;ctrl name='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:GetValue.Target>
-      <ui:GetValue.Value>
-        <OutArgument x:TypeArguments="x:String">[Url]</OutArgument>
-      </ui:GetValue.Value>
-    </ui:GetValue>
-    <ui:CloseApplication DisplayName="Close Application 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+    <ui:CloseApplication DisplayName="Close Application 'push button  Cerrar'" sap:VirtualizedContainerService.HintSize="467,106" sap2010:WorkflowViewState.IdRef="CloseApplication_2">
       <ui:CloseApplication.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b76e1bf-b930-4290-b771-ddfe9c240ba9" InformativeScreenshot="9bae92dbc3d08f33e97d18eb7a4af001" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' /&gt;&lt;ctrl name='TCL Television de 55&amp;quot; 4-Series Class 4K (2160p) Ultra HD HDR Sma*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Cerrar' role='push button' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4ed31b6e-c1ae-421b-9549-5c3e283b6cb6" InformativeScreenshot="f6a6815547c49add1eb23ae80915d9a4" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='LG Television de 50&amp;quot; Class 4K (2160p) LED Smart TV Compatible co*' /&gt;&lt;ctrl name='LG Television de 50&amp;quot; Class 4K (2160p) LED Smart TV Compatible co*' role='pane' /&gt;&lt;ctrl name='Google Chrome' role='pane' /&gt;&lt;ctrl name='Cerrar' role='push button' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
