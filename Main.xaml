@@ -1,54 +1,258 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}"
-xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
-xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
-xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
-xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TextExpression.NamespacesForImplementation>
-        <sco:Collection x:TypeArguments="x:String">
-            <x:String>System.Activities</x:String>
-            <x:String>System.Activities.Statements</x:String>
-            <x:String>System.Activities.Expressions</x:String>
-            <x:String>System.Activities.Validation</x:String>
-            <x:String>System.Activities.XamlIntegration</x:String>
-            <x:String>Microsoft.VisualBasic</x:String>
-            <x:String>Microsoft.VisualBasic.Activities</x:String>
-            <x:String>System</x:String>
-            <x:String>System.Collections</x:String>
-            <x:String>System.Collections.Generic</x:String>
-            <x:String>System.Data</x:String>
-            <x:String>System.Diagnostics</x:String>
-            <x:String>System.Drawing</x:String>
-            <x:String>System.IO</x:String>
-            <x:String>System.Linq</x:String>
-            <x:String>System.Net.Mail</x:String>
-            <x:String>System.Xml</x:String>
-            <x:String>System.Xml.Linq</x:String>
-            <x:String>UiPath.Core</x:String>
-            <x:String>UiPath.Core.Activities</x:String>
-            <x:String>System.Windows.Markup</x:String>
-        </sco:Collection>
-    </TextExpression.NamespacesForImplementation>
-    <TextExpression.ReferencesForImplementation>
-        <sco:Collection x:TypeArguments="AssemblyReference">
-            <AssemblyReference>System.Activities</AssemblyReference>
-            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-            <AssemblyReference>mscorlib</AssemblyReference>
-            <AssemblyReference>System.Data</AssemblyReference>
-            <AssemblyReference>System</AssemblyReference>
-            <AssemblyReference>System.Drawing</AssemblyReference>
-            <AssemblyReference>System.Core</AssemblyReference>
-            <AssemblyReference>System.Xml</AssemblyReference>
-            <AssemblyReference>System.Xml.Linq</AssemblyReference>
-            <AssemblyReference>PresentationFramework</AssemblyReference>
-            <AssemblyReference>WindowsBase</AssemblyReference>
-            <AssemblyReference>PresentationCore</AssemblyReference>
-            <AssemblyReference>System.Xaml</AssemblyReference>
-            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-            <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-        </sco:Collection>
-    </TextExpression.ReferencesForImplementation>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="745,2540" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="36">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Buscador de pantallas en amazon" sap:VirtualizedContainerService.HintSize="518,2548" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="conts_Busqueda">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Televisores</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_TablaExtraida" />
+      <Variable x:TypeArguments="x:String" Name="URL" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Informe que el programa esta por iniciar." DisplayName="Inicio " sap:VirtualizedContainerService.HintSize="476,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Inicia el programa&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:ReadTextFile File="{x:Null}" sap2010:Annotation.AnnotationText="Lee el texto dentro del archivo, para posteriormente guardarlo" Content="[URL]" DisplayName="Leer Archivo &quot;config.json&quot;" FileName=".tmh\config.json" sap:VirtualizedContainerService.HintSize="476,110" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadTextFile>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Abrimos la pagina de Amazon para realizar la actividad asignda." BrowserType="Chrome" DisplayName="Abrir pagina web de Amazon" sap:VirtualizedContainerService.HintSize="476,932" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[URL]">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Ingresar Busqueda" sap:VirtualizedContainerService.HintSize="376,800" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Iniciamos la busqueda del articulo." DisplayName="Busqueda de articulo" sap:VirtualizedContainerService.HintSize="334,122" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Iniciamos la busqueda del articulo&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="Escribimos el articulo deseado." DisplayName="Escribir lo que se desea buscar" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[conts_Busqueda]">
+              <ui:SetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d6747eea-07ba-40d4-a358-d55ce6b61236" InformativeScreenshot="93090ce672d5617207a925c4cf0792bc" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SetValue.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:SetValue>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" sap2010:Annotation.AnnotationText="Simulamos Click en buscar, para realizar la busqueda deseada." ClickType="CLICK_SINGLE" DisplayName="Buscar" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a96f81b8-564b-4488-afa5-4ba5c3c0af64" InformativeScreenshot="dd2592467b5158b0082a7839ce6a00ff" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="El nombre del articulo fue escrito y se llevo a cabo la busqueda de este." DisplayName="Fin de la bsuqueda del articulo" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Se finaliza  la busqueda del articulo&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OpenBrowser>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Se iniciara la extracion de datos." DisplayName="Inico de Extraccion de datos" sap:VirtualizedContainerService.HintSize="476,122" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Comenzamos la Extracion de datos&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <Sequence DisplayName="Extracción y Escritura de Datos" sap:VirtualizedContainerService.HintSize="476,848" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Adjunta la Pagina 'Amazon.com.mx'" sap:VirtualizedContainerService.HintSize="434,756" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="c7eaf8a3decf9101eade53992996cbab" Selector="&lt;html app='chrome.exe' title='Amazon.com.mx : Televisores' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Secuencia de Extracción y Escritura" sap:VirtualizedContainerService.HintSize="376,610" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" sap2010:Annotation.AnnotationText="Extrae los datos de Nombre, Precio y URL de los articulos." ContinueOnError="True" DataTable="[dt_TablaExtraida]" DisplayName="Extracción de Datos de los Articulos" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Nombre del Articulo' attr='text'&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='0' name='Precio' attr='text' name2='URL' attr2='href'&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="4" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="464dde31-a4b0-4142-8fc8-f7da9e354749" InformativeScreenshot="3bb9128ade53716f32fed4b47e1887f2" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='search' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ExtractData>
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="Se escrben los datos sobtenidos en un Hoja de Excel dentro de la &quot;Hoja1&quot;" DataTable="[dt_TablaExtraida]" DisplayName="Escritura de los datos en Excel" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Hoja1" WorkbookPath="Amazon List.xlsx">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:WriteRange>
+              <ui:LogMessage sap2010:Annotation.AnnotationText="Los datos fueron extraidos y escritos en un archivo de Excel." DisplayName="Extraccion de datos completa" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Finalizacion de la extracion de datos&quot;]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+      </ui:BrowserScope>
+    </Sequence>
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Informe que el programa esta por Finalizar" DisplayName="Fin " sap:VirtualizedContainerService.HintSize="476,122" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fin del Programa&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
 </Activity>
